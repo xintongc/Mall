@@ -13,5 +13,6 @@ public class LoginBizResult {
 
     private String status;
     private String msg;
+    private Boolean exist;
     private User user;
 }
