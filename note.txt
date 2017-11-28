@@ -1,0 +1,45 @@
+*Run需要在最外层
+
+
+ThreadLocal 线程隔离，只对当前有效
+
+登陆了一次，拿到一个token，相当于会员卡
+tokenHolder
+
+
+tokenMap 
+String —> Integer  用token的string，拿到User 的ID
+（Sting -> User, user 的数据都会到内存里）
+
+生成token
+第12行 生成了token，否则：  登陆-》 拿到token -〉 拿token调avarta
+setUserIdByToken
+
+
+（interalinterceptor里）
+line 33
+request.getHeader(Token_header)
+line 18  X-token
+
+line38, 有没有这个用户ID，假会员卡
+line42 把user提出来，user是不是空
+
+line47 单例设计模式，把user传给userController
+
+postman 点code：传输的http请求
+
+
+从http客户端传到服务器的方式：
+url
+url:para
+body
+header
+
+
+external
+对外，不走token
+完全暴露给外面
+
+internal
+走内网，不做token认证
+需要做认证
